@@ -47,6 +47,7 @@ public class OpcodeMap {
         map[34] = Op.CLOSURE;
         break;
       case LUA51:
+    	  /*
         map = new Op[38];
         map[0] = Op.MOVE;
         map[1] = Op.LOADK;
@@ -86,7 +87,75 @@ public class OpcodeMap {
         map[35] = Op.CLOSE;
         map[36] = Op.CLOSURE;
         map[37] = Op.VARARG;
-        break;
+        */
+
+          map = new Op[64];
+          map[0] = Op.ADD;
+          map[1] = Op.LOADK;
+          map[2] = Op.GETTABLE;
+          map[3] = Op.LOADK;
+          map[4] = Op.ADD;
+          map[5] = Op.EQ;
+          map[6] = Op.LEN;
+          map[7] = Op.CONCAT;
+          map[8] = Op.SELF;
+          map[9] = Op.TFORLOOP;
+          map[10] = Op.NOT;
+          map[11] = Op.LE;
+          map[12] = Op.SUB;
+          map[13] = Op.GETGLOBAL;
+          map[14] = Op.MOVE;
+          map[15] = Op.FORLOOP;
+          map[16] = Op.MUL;
+          map[17] = Op.TEST;
+          map[18] = Op.GETUPVAL;
+          map[19] = Op.LOADNIL;
+          map[20] = Op.CLOSURE;
+          map[21] = Op.VARARG;
+          map[22] = Op.UNM;
+          map[23] = Op.TESTSET;
+          map[24] = Op.GETGLOBAL;
+          map[25] = Op.SETGLOBAL;
+          map[26] = Op.MOVE;
+          map[27] = Op.CALL;
+          map[28] = Op.RETURN;
+          map[29] = Op.SETGLOBAL;
+          map[30] = Op.VARARG;
+          map[31] = Op.SELF;
+          map[32] = Op.JMP;
+          map[33] = Op.TAILCALL;
+          map[34] = Op.JMP;
+          map[35] = Op.CLOSE;
+          map[36] = Op.POW;
+          map[37] = Op.LOADBOOL;
+          map[38] = Op.SETLIST;
+          map[39] = Op.SUB;
+          map[40] = Op.LOADBOOL;
+          map[41] = Op.LT;
+          map[42] = Op.TEST;
+          map[43] = Op.DIV;
+          map[44] = Op.EQ;
+          map[45] = Op.NOT;
+          map[46] = Op.UNM;
+          map[47] = Op.FORPREP;
+          map[48] = Op.FORLOOP;
+          map[49] = Op.RETURN;
+          map[50] = Op.GETUPVAL;
+          map[51] = Op.LT;
+          map[52] = Op.SETUPVAL;
+          map[53] = Op.SETLIST;
+          map[54] = Op.SETTABLE;
+          map[55] = Op.FORPREP;
+          map[56] = Op.CALL;
+          map[57] = Op.CLOSURE;
+          map[58] = Op.TAILCALL;
+          map[59] = Op.CLOSE;
+          map[60] = Op.LE;
+          map[61] = Op.GETTABLE;
+          map[62] = Op.MOD;
+          map[63] = Op.NEWTABLE;
+    	  
+    	  break;
       case LUA52:
         map = new Op[40];
         map[0] = Op.MOVE;
